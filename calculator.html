@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trip Cost Calculator</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style1.css">
+
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <h1 class="logo">WanderLux Travel Agency</h1>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Destinations</a></li>
+            <li><a href="calculator.html">Trip Cost</a></li>
+            <li><a href="appointment.html">Appointment</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div>
+    <p class="p1">
+        WanderLux Travel Agency offers personalised holiday planning, guided tours,
+        luxury vacations, and affordable travel packages for domestic and international destinations.
+        We help customers create unforgettable travel experiences with comfort and convenience.
+    </p>
+</div>
+
+<div class="container">
+
+    <h1>Trip Cost Calculator</h1>
+
+    <label for="destination">Destination</label>
+    <select id="destination">
+        <option value="200">Bali</option>
+        <option value="300">Dubai</option>
+        <option value="150">India</option>
+        <option value="250">Sri Lanka</option>
+    </select>
+
+    <label for="travellers">Number of Travellers</label>
+    <input type="number" id="travellers" min="1" value="2">
+
+    <label for="days">Duration (Days)</label>
+    <input type="number" id="days" min="1" value="5">
+
+    <label for="budget">Travel Style</label>
+    <select id="budget">
+        <option value="0.8">Economy</option>
+        <option value="1">Standard</option>
+        <option value="1.5">Luxury</option>
+    </select>
+
+    <button onclick="calculateTrip()">Estimate Cost</button>
+
+    
+<div class="result" id="result"></div>
+
+
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
